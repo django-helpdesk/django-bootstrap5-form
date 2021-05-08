@@ -1,0 +1,70 @@
+{% load bootstrap5 %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+        <title>Bootstrap 5 form example</title>
+        <style type="text/css">
+            .multiple-checkbox ul { /* Used to hide <li> elements in multiple checkbox forms */
+              padding-left: 0px;
+              list-style: none;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <h1>Bootstrap form example</h1>
+
+                    <p>below demonstrates how the form looks with bootstrap 5</p>
+                </div>
+            </div>
+
+            <!-- basic example -->
+            <div class="row">
+                <div class="span12">
+                    <h2>Basic example</h2>
+
+                    <hr />
+
+                    <form class="form" role="form">
+                        {{ form|bootstrap5 }}
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="button" class="btn btn-primary" value="Submit" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <!-- horizontal form -->
+            <div class="row">
+                <div class="span12">
+                    <h2>Horizontal form</h2>
+
+                    <hr />
+
+                    <form class="form-horizontal" role="form">
+                        {{ form|bootstrap5_horizontal }}
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <input type="button" class="btn btn-primary" value="Submit" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+    </body>
+</html>
