@@ -60,7 +60,7 @@ def render(element, markup_classes):
 
     if element_type == 'boundfield':
         add_input_classes(element)
-        template = get_template("bootstrap4form/field.html")
+        template = get_template("bootstrap5form/field.html")
         context = {'field': element, 'classes': markup_classes, 'form': element.form}
     else:
         has_management = getattr(element, 'management_form', None)
@@ -69,13 +69,13 @@ def render(element, markup_classes):
                 for field in form.visible_fields():
                     add_input_classes(field)
 
-            template = get_template("bootstrap4form/formset.html")
+            template = get_template("bootstrap5form/formset.html")
             context = {'formset': element, 'classes': markup_classes}
         else:
             for field in element.visible_fields():
                 add_input_classes(field)
 
-            template = get_template("bootstrap4form/form.html")
+            template = get_template("bootstrap5form/form.html")
             context = {'form': element, 'classes': markup_classes}
 
 

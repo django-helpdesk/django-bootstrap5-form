@@ -19,7 +19,7 @@ setup(
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
     ],
-    keywords='bootstrap4,django',
+    keywords='bootstrap5,django',
     author='gwasser',
     author_email='garret@wassiverse.com',
     url='http://github.com/gwasser/django-bootstrap5-form',
