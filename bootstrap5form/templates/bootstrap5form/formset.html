@@ -3,9 +3,9 @@
 {% for form in formset %}
   {% if classes.label == 'sr-only' %}
       <div class="form-inline">
-      {% include "bootstrap4form/form.html" with form=form %}
+      {% include "bootstrap5form/form.html" with form=form %}
       </div>
   {%else%}
-      {% include "bootstrap4form/form.html" with form=form %}
+      {% include "bootstrap5form/form.html" with form=form %}
   {% endif %}
 {% endfor %}
