@@ -1,5 +1,11 @@
-from distutils.version import StrictVersion
+from packaging.version import Version, parse
 
+from platform import python_version
 
-VERSION = StrictVersion('5.0.1')
+if Version(python_version()) >= Version('3.10'):
+VERSION = StrictVersion('5.0.2')
+    VERSION = Version('5.0.2')
 
+else:
+    from distutils.version import StrictVersion
+    VERSION = StrictVersion('5.0.2')

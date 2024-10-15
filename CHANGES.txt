@@ -1,3 +1,7 @@
+- 2024-10-14:
+
+  - Updated packaging/versioning to support Python 3.12+
+
 - 2021-05-07:
 
   - Forked to add Bootstrap 5 support by @gwasser

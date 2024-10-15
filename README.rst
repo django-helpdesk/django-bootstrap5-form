@@ -5,12 +5,6 @@ Django bootstrap5 form
 .. image:: https://badge.fury.io/py/django-bootstrap5-form.png
    :alt: PyPI version
    :target: https://pypi.python.org/pypi/django-bootstrap5-form
-
-.. image:: https://travis-ci.org/django-helpdesk/django-bootstrap5-form.png?branch=master   
-    :target: https://travis-ci.org/django-helpdesk/django-bootstrap5-form
-
-.. image:: https://coveralls.io/repos/django-helpdesk/django-bootstrap5-form/badge.png?branch=master  
-   :target: https://coveralls.io/r/django-helpdesk/django-bootstrap5-form?branch=master
    
 
 Twitter Bootstrap5 for Django Forms.
